@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkFusion=self.webpackChunkFusion||[]).push([[2585],{__fusion__e28f3d54f4:(t,o,s)=>{s.r(o),s.d(o,{FloatingWebNotificationForIslands:()=>u,default:()=>a});var e=s(12386),f=s(25816),n=s(15805),i=s(40014);const u=()=>{const{top:t,bottom:o}=(0,f.V)();return(0,i.Y)(e.Ct,{bottomOffset:o,topOffset:t,autoShowNotif:!0,children:(0,i.Y)(n.C,{})})},a=u}}]);
+//# sourceMappingURL=https://sourcemaps.uberinternal.com/raw/uber-sites/client-2585-a633166713a11b41.js.map
