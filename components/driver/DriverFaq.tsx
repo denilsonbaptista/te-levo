@@ -4,7 +4,7 @@ import { STORE_URLS } from "../StoreLink";
 const questions: FaqItem[] = [
   {
     q: "Como me torno motorista parceiro?",
-    a: "Baixe o app do motorista TE LEVO no Google Play, faça o cadastro e envie os documentos solicitados. Após a análise, você já pode começar a dirigir.",
+    a: "Baixe o app do motorista te levo no Google Play, faça o cadastro e envie os documentos solicitados. Após a análise, você já pode começar a dirigir.",
   },
   {
     q: "Preciso cumprir horário ou meta?",
@@ -16,7 +16,7 @@ const questions: FaqItem[] = [
   },
   {
     q: "Em quais cidades posso dirigir?",
-    a: "A TE LEVO atende Parauapebas, no Pará. As corridas são todas na cidade e região.",
+    a: "A te levo atende Parauapebas, no Pará. As corridas são todas na cidade e região.",
   },
   {
     q: "Como funciona a segurança para o motorista?",

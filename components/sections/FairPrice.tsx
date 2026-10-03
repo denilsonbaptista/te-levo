@@ -1,4 +1,5 @@
 import { Icon } from "../Icons";
+import { withBrand } from "../Brand";
 
 const checks = [
   { title: "Valor estimado antes de confirmar", text: "Decida com tranquilidade, sabendo quanto vai pagar." },
@@ -7,8 +8,8 @@ const checks = [
 ];
 
 const options = [
-  { name: "TE LEVO", info: "Chega em 3 min · 4 lugares", price: "R$ 14,90", selected: true },
-  { name: "TE LEVO Conforto", info: "Chega em 6 min · carros maiores", price: "R$ 19,50", selected: false },
+  { name: "te levo", info: "Chega em 3 min · 4 lugares", price: "R$ 14,90", selected: true },
+  { name: "te levo Conforto", info: "Chega em 6 min · carros maiores", price: "R$ 19,50", selected: false },
 ];
 
 export default function FairPrice() {
@@ -42,7 +43,7 @@ export default function FairPrice() {
                 <Icon id="i-car" viewBox="0 0 32 24" />
               </div>
               <div>
-                <b>{opt.name}</b>
+                <b>{withBrand(opt.name)}</b>
                 <small>{opt.info}</small>
               </div>
               <div className="val">

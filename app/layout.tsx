@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { DM_Sans, Outfit } from "next/font/google";
 import { IconSprite } from "@/components/Icons";
 import MetaPixel from "@/components/MetaPixel";
+import ScrollToTop from "@/components/ScrollToTop";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -21,7 +22,7 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Te Levo Mobile - Seu App de Corridas",
   description:
-    "TE LEVO Mobile: aplicativo de mobilidade de Parauapebas. Corridas seguras, preço claro antes de confirmar e suporte local. Baixe o app para Android e iPhone.",
+    "te levo Mobile: aplicativo de mobilidade de Parauapebas. Corridas seguras, preço claro antes de confirmar e suporte local. Baixe o app para Android e iPhone.",
   openGraph: {
     title: "Te Levo Mobile - Seu App de Corridas",
     description: "Corridas seguras em Parauapebas, com preço claro e suporte de quem é daqui.",
@@ -40,6 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <MetaPixel />
         <IconSprite />
         {children}
+        <ScrollToTop />
       </body>
     </html>
   );

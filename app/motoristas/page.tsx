@@ -14,7 +14,7 @@ import Trust, { type TrustItem } from "@/components/sections/Trust";
 export const metadata: Metadata = {
   title: "Seja motorista parceiro | Te Levo Mobile",
   description:
-    "Dirija com a TE LEVO em Parauapebas: faça seu horário, tenha ganhos justos e conte com suporte local. Baixe o app do motorista e cadastre-se.",
+    "Dirija com a te levo em Parauapebas: faça seu horário, tenha ganhos justos e conte com suporte local. Baixe o app do motorista e cadastre-se.",
   openGraph: {
     title: "Seja motorista parceiro | Te Levo Mobile",
     description: "Faça seu horário, tenha ganhos justos e conte com suporte de quem é daqui.",
@@ -39,8 +39,8 @@ const highlights: TrustItem[] = [
 
 export default function DriversPage() {
   return (
-    <>
-      <Header links={navLinks} cta={{ href: "#baixar", label: "Quero dirigir" }} />
+    <div className="theme-driver">
+      <Header links={navLinks} cta={{ href: "#baixar", label: "Quero dirigir" }} badge="Motorista" />
       <main>
         <DriverHero />
         <Trust items={highlights} />
@@ -53,6 +53,6 @@ export default function DriversPage() {
       </main>
       <Footer />
       <RevealOnScroll />
-    </>
+    </div>
   );
 }

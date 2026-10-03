@@ -21,6 +21,9 @@ h3{font-size:1.3rem}
 .wrap{width:min(1200px,calc(100% - 48px));margin-inline:auto}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--blue);margin-bottom:16px}
 .eyebrow::before{content:"";width:18px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--yellow) 0 33%,var(--green) 33% 66%,var(--red) 66%)}
+.brand{color:var(--blue);font-weight:700;white-space:nowrap;text-transform:none;letter-spacing:normal}
+.drive .brand,.safety .brand,.app-card.pass .brand,footer .brand{color:var(--yellow)}
+.safety .ride-card .brand{color:var(--blue)}
 .lead{font-size:1.15rem;color:var(--muted);max-width:560px}
 .section{padding:112px 0}
 .section-head{max-width:720px;margin-bottom:56px}
@@ -284,6 +287,22 @@ footer ul a:hover{color:#fff;text-decoration:underline}
 .opt.doc{padding:12px 16px}
 .opt.doc .car svg{width:24px;height:24px}
 .plate.fare b{border:0;padding:0;letter-spacing:-.01em;font:700 1.15rem var(--font-outfit),sans-serif}
+
+/* Tema da página de motoristas: verde no lugar do azul */
+.theme-driver{color:var(--ink);
+  --blue:#26782a; --blue-600:#1f6623; --blue-50:#eef7ec; --blue-100:#d7ecd3;
+  --dark:#14361c; --ink:#0f2414; --muted:#56705b; --line:#e2ebe2; --cream:#f5f8f3;
+  --shadow:0 1px 2px rgba(20,54,28,.06),0 8px 24px rgba(20,54,28,.08);
+  --shadow-lg:0 30px 80px rgba(12,38,18,.28);
+}
+.theme-driver .btn-dark:hover{background:#1d4425}
+.theme-driver .safety .eyebrow,.theme-driver .drive-copy .eyebrow{color:#a8dca0}
+.theme-driver .safety .lead,.theme-driver .feature p,.theme-driver .drive-copy .lead{color:#c3d8c4}
+.theme-driver .app-card.pass p{color:#dcefd9}
+.theme-driver footer{color:#c6d8c7}
+.theme-driver .foot-bottom{color:#93ab95}
+.theme-driver .driver-panel{background:var(--dark)}
+.logo-badge{align-self:center;margin-left:2px;padding:4px 10px;border-radius:999px;background:var(--yellow);color:var(--ink);font:700 .72rem/1 var(--font-outfit),sans-serif;letter-spacing:.06em;text-transform:uppercase}
 
 /* Animação de entrada */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}

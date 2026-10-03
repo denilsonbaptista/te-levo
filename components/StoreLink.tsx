@@ -8,7 +8,7 @@ export const STORE_URLS = {
   instagram: "https://www.instagram.com/televomobile.pa/",
   whatsapp: "https://wa.me/5594936182415",
   whatsappDriver: `https://wa.me/5594936182415?text=${encodeURIComponent(
-    "Olá! Quero ser motorista parceiro da TE LEVO.",
+    "Olá! Quero ser motorista parceiro da te levo.",
   )}`,
 };
 

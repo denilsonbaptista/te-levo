@@ -2,16 +2,17 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Mark } from "./Icons";
+import LogoLink from "./LogoLink";
 
 type NavLink = { href: string; label: string };
 
 type HeaderProps = {
   links: NavLink[];
   cta: NavLink;
+  badge?: string;
 };
 
-export default function Header({ links, cta }: HeaderProps) {
+export default function Header({ links, cta, badge }: HeaderProps) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -27,12 +28,7 @@ export default function Header({ links, cta }: HeaderProps) {
   return (
     <header className={className} id="topbar">
       <div className="wrap nav">
-        <Link className="logo" href="/" aria-label="TE LEVO Mobile, página inicial">
-          <Mark />
-          <b>
-            te<i>levo</i>
-          </b>
-        </Link>
+        <LogoLink badge={badge} onClick={() => setMenuOpen(false)} />
         <nav className="nav-links" id="menu" aria-label="Navegação principal">
           {links.map((link) => (
             <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)}>

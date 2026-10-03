@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Icon } from "../Icons";
 import StoreLink, { STORE_URLS } from "../StoreLink";
+import Brand from "../Brand";
 
 const perks = [
   { icon: "i-calendar", text: "Flexibilidade total de horários" },
@@ -19,7 +20,7 @@ export default function Drivers() {
         <div className="drive reveal">
           <div className="drive-copy">
             <div className="eyebrow">Para motoristas</div>
-            <h2>Dirija com a TE LEVO e faça seu próprio horário.</h2>
+            <h2>Dirija com a <Brand /> e faça seu próprio horário.</h2>
             <p className="lead">
               Seja parceiro de uma empresa local que valoriza quem está ao volante. Você decide quando dirigir e conta
               com suporte de perto.

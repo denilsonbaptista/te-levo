@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Icon, Mark } from "./Icons";
+import { Icon } from "./Icons";
+import LogoLink from "./LogoLink";
 import { STORE_URLS } from "./StoreLink";
 
 const external = { target: "_blank", rel: "noopener noreferrer" } as const;
@@ -12,22 +13,17 @@ export default function Footer() {
         <div className="wrap">
           <div className="foot-grid">
             <div>
-              <Link className="logo" href="/" aria-label="TE LEVO Mobile, página inicial">
-                <Mark />
-                <b>
-                  te<i>levo</i>
-                </b>
-              </Link>
+              <LogoLink />
               <p>
                 <strong style={{ color: "#fff" }}>Te Levo Mobile - Seu App de Corridas</strong>
                 <br />
                 Mobilidade segura, confortável e feita por quem conhece Parauapebas.
               </p>
               <div className="social">
-                <a href={STORE_URLS.instagram} {...external} aria-label="Instagram da TE LEVO">
+                <a href={STORE_URLS.instagram} {...external} aria-label="Instagram da te levo">
                   <Icon id="i-insta" />
                 </a>
-                <a href={STORE_URLS.whatsapp} {...external} aria-label="WhatsApp da TE LEVO">
+                <a href={STORE_URLS.whatsapp} {...external} aria-label="WhatsApp da te levo">
                   <Icon id="i-whats" />
                 </a>
               </div>

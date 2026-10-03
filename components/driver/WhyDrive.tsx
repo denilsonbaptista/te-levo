@@ -1,4 +1,5 @@
 import { Icon } from "../Icons";
+import Brand from "../Brand";
 
 const reasons = [
   {
@@ -28,10 +29,10 @@ export default function WhyDrive() {
     <section className="section" id="vantagens">
       <div className="wrap">
         <div className="section-head reveal">
-          <div className="eyebrow">Por que dirigir com a TE LEVO</div>
+          <div className="eyebrow"><span>Por que dirigir com a <Brand /></span></div>
           <h2>Uma parceria feita para quem está ao volante.</h2>
           <p className="lead">
-            A TE LEVO é uma empresa daqui. Conhecemos a rotina de quem dirige pela cidade e trabalhamos para que cada
+            A <Brand /> é uma empresa daqui. Conhecemos a rotina de quem dirige pela cidade e trabalhamos para que cada
             corrida valha a pena para os dois lados.
           </p>
         </div>

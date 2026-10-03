@@ -1,6 +1,7 @@
 import { Icon, Mark } from "../Icons";
 import MapArt from "../MapArt";
 import StoreLink, { STORE_URLS } from "../StoreLink";
+import Brand from "../Brand";
 
 export default function Hero() {
   return (
@@ -12,7 +13,7 @@ export default function Hero() {
             Vá aonde precisar, com <em>quem conhece a cidade.</em>
           </h1>
           <p className="lead">
-            Peça sua corrida em poucos toques, veja o preço antes de confirmar e acompanhe tudo pelo mapa. A TE LEVO é o
+            Peça sua corrida em poucos toques, veja o preço antes de confirmar e acompanhe tudo pelo mapa. A <Brand /> é o
             aplicativo de mobilidade feito aqui, com segurança e atendimento de verdade.
           </p>
           <div className="stores">
@@ -40,7 +41,7 @@ export default function Hero() {
               <MapArt />
               <div className="app-pill">
                 <Mark />
-                TE LEVO MOBILE
+                <Brand /> mobile
               </div>
               <div className="sheet">
                 <div className="grab"></div>

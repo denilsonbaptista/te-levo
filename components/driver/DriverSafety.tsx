@@ -1,4 +1,5 @@
 import { Icon } from "../Icons";
+import Brand from "../Brand";
 
 const features = [
   {
@@ -58,7 +59,7 @@ export default function DriverSafety() {
               <b>Ana</b>
               <div className="rate">
                 <Icon id="i-star" />
-                4,8 · Passageira TE LEVO
+                4,8 · Passageira <Brand />
               </div>
             </div>
             <div className="plate fare">

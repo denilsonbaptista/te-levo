@@ -1,4 +1,5 @@
 import { Icon } from "../Icons";
+import Brand from "../Brand";
 
 const uses = [
   {
@@ -31,7 +32,7 @@ export default function Passengers() {
           <div className="eyebrow">Para passageiros</div>
           <h2>Um app para cada momento do seu dia.</h2>
           <p className="lead">
-            Do caminho para o trabalho à volta para casa depois do jantar, a TE LEVO leva você com conforto e
+            Do caminho para o trabalho à volta para casa depois do jantar, a <Brand /> leva você com conforto e
             tranquilidade.
           </p>
         </div>

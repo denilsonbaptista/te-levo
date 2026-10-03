@@ -1,3 +1,5 @@
+import Brand from "../Brand";
+
 const values = [
   { title: "Segurança", text: "Cadastro de motoristas, dados da viagem visíveis e acompanhamento em tempo real." },
   { title: "Respeito", text: "Tratamos passageiros e motoristas com a mesma atenção e cuidado." },
@@ -10,10 +12,10 @@ export default function About() {
     <section className="section" id="sobre" style={{ paddingTop: 0 }}>
       <div className="wrap about-grid">
         <div className="reveal">
-          <div className="eyebrow">Sobre a TE LEVO</div>
+          <div className="eyebrow"><span>Sobre a <Brand /></span></div>
           <h2>Uma empresa daqui, comprometida com a nossa cidade.</h2>
           <p className="lead" style={{ marginTop: 20 }}>
-            A TE LEVO nasceu para oferecer a Parauapebas uma forma de se deslocar mais segura, confortável e próxima das
+            A <Brand /> nasceu para oferecer a Parauapebas uma forma de se deslocar mais segura, confortável e próxima das
             pessoas. Conhecemos as ruas, os bairros e a rotina de quem vive aqui.
           </p>
           <p className="lead">

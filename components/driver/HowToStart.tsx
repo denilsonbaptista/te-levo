@@ -1,7 +1,9 @@
+import { withBrand } from "../Brand";
+
 const steps = [
   {
     title: "Baixe o app",
-    text: "Instale o app do motorista TE LEVO, disponível para Android no Google Play.",
+    text: "Instale o app do motorista te levo, disponível para Android no Google Play.",
   },
   {
     title: "Faça seu cadastro",
@@ -31,7 +33,7 @@ export default function HowToStart() {
             <article className="step reveal" key={step.title}>
               <div className="step-n">{i + 1}</div>
               <h3>{step.title}</h3>
-              <p>{step.text}</p>
+              <p>{withBrand(step.text)}</p>
             </article>
           ))}
         </div>

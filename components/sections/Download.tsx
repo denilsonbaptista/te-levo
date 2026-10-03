@@ -1,5 +1,6 @@
 import { Mark } from "../Icons";
 import StoreLink, { STORE_URLS } from "../StoreLink";
+import Brand from "../Brand";
 
 export default function Download() {
   return (
@@ -14,7 +15,7 @@ export default function Download() {
           <article className="app-card pass reveal">
             <Mark className="corner" />
             <div className="tag">Passageiro</div>
-            <h3>Peça sua corrida com a TE&nbsp;LEVO</h3>
+            <h3>Peça sua corrida com a <Brand /></h3>
             <p>Segurança, conforto e preço claro na palma da mão. Disponível para Android e iPhone.</p>
             <div className="stores">
               <StoreLink href={STORE_URLS.passengerAndroid} store="play" caption="DISPONÍVEL NO" onDark />
@@ -25,7 +26,7 @@ export default function Download() {
             <div className="tag" style={{ color: "var(--blue)" }}>
               Motorista
             </div>
-            <h3>Dirija e ganhe com a TE&nbsp;LEVO</h3>
+            <h3>Dirija e ganhe com a <Brand /></h3>
             <p>Faça seu horário, receba corridas na sua região e conte com o suporte de uma equipe local.</p>
             <div className="stores">
               <StoreLink href={STORE_URLS.driverAndroid} store="play" caption="DISPONÍVEL NO" />

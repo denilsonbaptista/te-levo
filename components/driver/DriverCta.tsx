@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Icon, Mark } from "../Icons";
 import StoreLink, { STORE_URLS } from "../StoreLink";
+import Brand from "../Brand";
 
 export default function DriverCta() {
   return (
@@ -9,13 +10,13 @@ export default function DriverCta() {
         <div className="download-head reveal">
           <div className="eyebrow">Comece hoje</div>
           <h2>Seu próximo passageiro está esperando.</h2>
-          <p className="lead">Baixe o app do motorista, faça seu cadastro e venha dirigir com a TE LEVO.</p>
+          <p className="lead">Baixe o app do motorista, faça seu cadastro e venha dirigir com a <Brand />.</p>
         </div>
         <div className="apps">
           <article className="app-card pass reveal">
             <Mark className="corner" />
             <div className="tag">App do motorista</div>
-            <h3>Dirija e ganhe com a TE&nbsp;LEVO</h3>
+            <h3>Dirija e ganhe com a <Brand /></h3>
             <p>Cadastro pelo app, análise da nossa equipe e, depois, é só ficar online. Disponível para Android.</p>
             <div className="stores">
               <StoreLink href={STORE_URLS.driverAndroid} store="play" caption="DISPONÍVEL NO" onDark />

@@ -1,4 +1,5 @@
 import { Icon, Mark } from "../Icons";
+import Brand from "../Brand";
 import MapArt from "../MapArt";
 import StoreLink, { STORE_URLS } from "../StoreLink";
 
@@ -12,8 +13,7 @@ export default function DriverHero() {
             Dirija em Parauapebas com <em>quem valoriza você.</em>
           </h1>
           <p className="lead">
-            Faça seu próprio horário, receba corridas na sua região e conte com o suporte de uma equipe local. Na TE
-            LEVO, o motorista é parceiro de verdade.
+            Faça seu próprio horário, receba corridas na sua região e conte com o suporte de uma equipe local. Na <Brand />, o motorista é parceiro de verdade.
           </p>
           <div className="stores">
             <StoreLink href={STORE_URLS.driverAndroid} store="play" caption="APP DO MOTORISTA NO" />

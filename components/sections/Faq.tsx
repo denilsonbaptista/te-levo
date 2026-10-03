@@ -4,11 +4,11 @@ import { STORE_URLS } from "../StoreLink";
 const questions: FaqItem[] = [
   {
     q: "Como faço para pedir uma corrida?",
-    a: "Baixe o app TE LEVO Mobile, faça seu cadastro, informe o destino e confirme. Você acompanha o motorista pelo mapa até ele chegar.",
+    a: "Baixe o app te levo Mobile, faça seu cadastro, informe o destino e confirme. Você acompanha o motorista pelo mapa até ele chegar.",
   },
   {
-    q: "Em quais cidades a TE LEVO atende?",
-    a: "A TE LEVO atende Parauapebas, no Pará. Nosso foco é oferecer um serviço de qualidade para quem vive e circula pela cidade.",
+    q: "Em quais cidades a te levo atende?",
+    a: "A te levo atende Parauapebas, no Pará. Nosso foco é oferecer um serviço de qualidade para quem vive e circula pela cidade.",
   },
   {
     q: "Quais formas de pagamento são aceitas?",
@@ -24,7 +24,7 @@ const questions: FaqItem[] = [
   },
   {
     q: "Como me torno motorista parceiro?",
-    a: "Baixe o app do motorista TE LEVO no Google Play, faça o cadastro e envie os documentos solicitados. Após a análise, você já pode começar a dirigir.",
+    a: "Baixe o app do motorista te levo no Google Play, faça o cadastro e envie os documentos solicitados. Após a análise, você já pode começar a dirigir.",
   },
 ];
 
