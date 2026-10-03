@@ -1,6 +1,7 @@
+import FaqList, { type FaqItem } from "../FaqList";
 import { STORE_URLS } from "../StoreLink";
 
-const questions = [
+const questions: FaqItem[] = [
   {
     q: "Como faço para pedir uma corrida?",
     a: "Baixe o app TE LEVO Mobile, faça seu cadastro, informe o destino e confirme. Você acompanha o motorista pelo mapa até ele chegar.",
@@ -56,14 +57,7 @@ export default function Faq() {
             .
           </p>
         </div>
-        <div className="faq-list">
-          {questions.map((item, i) => (
-            <details key={item.q} open={i === 0}>
-              <summary>{item.q}</summary>
-              <p>{item.a}</p>
-            </details>
-          ))}
-        </div>
+        <FaqList items={questions} />
       </div>
     </section>
   );

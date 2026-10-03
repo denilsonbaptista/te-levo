@@ -1,17 +1,17 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Mark } from "./Icons";
 
-const links = [
-  { href: "#passageiros", label: "Passageiros" },
-  { href: "#seguranca", label: "Segurança" },
-  { href: "#motoristas", label: "Motoristas" },
-  { href: "#sobre", label: "Sobre nós" },
-  { href: "#duvidas", label: "Dúvidas" },
-];
+type NavLink = { href: string; label: string };
 
-export default function Header() {
+type HeaderProps = {
+  links: NavLink[];
+  cta: NavLink;
+};
+
+export default function Header({ links, cta }: HeaderProps) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -27,23 +27,23 @@ export default function Header() {
   return (
     <header className={className} id="topbar">
       <div className="wrap nav">
-        <a className="logo" href="#inicio" aria-label="TE LEVO Mobile, página inicial">
+        <Link className="logo" href="/" aria-label="TE LEVO Mobile, página inicial">
           <Mark />
           <b>
             te<i>levo</i>
           </b>
-        </a>
+        </Link>
         <nav className="nav-links" id="menu" aria-label="Navegação principal">
           {links.map((link) => (
-            <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)}>
+            <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)}>
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
         <div className="nav-cta">
-          <a className="btn btn-dark" href="#baixar">
-            Baixar o app
-          </a>
+          <Link className="btn btn-dark" href={cta.href}>
+            {cta.label}
+          </Link>
           <button
             className="menu-btn"
             aria-controls="menu"

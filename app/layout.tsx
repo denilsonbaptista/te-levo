@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { DM_Sans, Outfit } from "next/font/google";
+import { IconSprite } from "@/components/Icons";
 import MetaPixel from "@/components/MetaPixel";
 import "./globals.css";
 
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pt-BR" className={`${dmSans.variable} ${outfit.variable}`}>
       <body>
         <MetaPixel />
+        <IconSprite />
         {children}
       </body>
     </html>

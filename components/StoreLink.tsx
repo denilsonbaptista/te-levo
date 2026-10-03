@@ -7,6 +7,9 @@ export const STORE_URLS = {
   driverAndroid: "https://play.google.com/store/apps/details?id=br.com.televomobilearaxa.taxi.drivermachine",
   instagram: "https://www.instagram.com/televomobile.pa/",
   whatsapp: "https://wa.me/5594936182415",
+  whatsappDriver: `https://wa.me/5594936182415?text=${encodeURIComponent(
+    "Olá! Quero ser motorista parceiro da TE LEVO.",
+  )}`,
 };
 
 type StoreLinkProps = {

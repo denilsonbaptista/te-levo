@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Icon } from "../Icons";
 import StoreLink, { STORE_URLS } from "../StoreLink";
 
@@ -31,7 +32,12 @@ export default function Drivers() {
                 </li>
               ))}
             </ul>
-            <StoreLink href={STORE_URLS.driverAndroid} store="play" caption="APP DO MOTORISTA NO" onDark />
+            <div className="stores">
+              <StoreLink href={STORE_URLS.driverAndroid} store="play" caption="APP DO MOTORISTA NO" onDark />
+              <Link className="btn btn-outline-light" href="/motoristas">
+                Conheça as vantagens
+              </Link>
+            </div>
           </div>
           <div className="drive-art" aria-hidden="true">
             <svg className="road" viewBox="0 0 500 480" preserveAspectRatio="xMidYMid slice">

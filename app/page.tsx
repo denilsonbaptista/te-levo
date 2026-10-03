@@ -1,6 +1,5 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { IconSprite } from "@/components/Icons";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import About from "@/components/sections/About";
 import Download from "@/components/sections/Download";
@@ -13,11 +12,18 @@ import Passengers from "@/components/sections/Passengers";
 import Safety from "@/components/sections/Safety";
 import Trust from "@/components/sections/Trust";
 
+const navLinks = [
+  { href: "#passageiros", label: "Passageiros" },
+  { href: "#seguranca", label: "Segurança" },
+  { href: "/motoristas", label: "Motoristas" },
+  { href: "#sobre", label: "Sobre nós" },
+  { href: "#duvidas", label: "Dúvidas" },
+];
+
 export default function Home() {
   return (
     <>
-      <IconSprite />
-      <Header />
+      <Header links={navLinks} cta={{ href: "#baixar", label: "Baixar o app" }} />
       <main>
         <Hero />
         <Trust />

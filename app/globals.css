@@ -266,6 +266,25 @@ footer ul a:hover{color:#fff;text-decoration:underline}
 .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-top:28px;font-size:.86rem;color:#8fabb9}
 .stripe{height:6px;background:linear-gradient(90deg,var(--yellow) 0 33.3%,var(--green) 33.3% 66.6%,var(--red) 66.6%)}
 
+/* Página de motoristas */
+.btn-tall{min-height:56px;border-radius:12px}
+.btn-ico{width:22px;height:22px;flex:none}
+.btn-outline-light{min-height:56px;border-radius:12px;background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.35)}
+.btn-outline-light:hover{background:rgba(255,255,255,.08)}
+.driver-panel{background:var(--dark)}
+.online-dot{width:8px;height:8px;border-radius:50%;background:var(--green);margin-left:6px;animation:pulse 1.6s infinite}
+.req-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
+.sheet .req-top h4{margin:0}
+.req-timer{font:700 .68rem var(--font-outfit),sans-serif;color:var(--red);background:#f6dfe1;padding:3px 9px;border-radius:999px}
+.req-price{font:700 1.35rem var(--font-outfit),sans-serif;letter-spacing:-.02em;color:var(--ink);margin-bottom:10px}
+.req-price small{font:500 .66rem var(--font-dm-sans),sans-serif;letter-spacing:0;color:var(--muted)}
+.sheet .go-accept{background:var(--green)}
+.steps-4{grid-template-columns:repeat(4,1fr)}
+.step:nth-child(4) .step-n{background:var(--green)}
+.opt.doc{padding:12px 16px}
+.opt.doc .car svg{width:24px;height:24px}
+.plate.fare b{border:0;padding:0;letter-spacing:-.01em;font:700 1.15rem var(--font-outfit),sans-serif}
+
 /* Animação de entrada */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
@@ -278,6 +297,7 @@ footer ul a:hover{color:#fff;text-decoration:underline}
   .trust-item:nth-child(3){border-left:0}
   .trust-item:nth-child(n+3){border-top:1px solid var(--line)}
   .drive-copy{padding:48px}
+  .steps-4{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:900px){
   .nav-links{position:absolute;top:72px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:12px 16px 20px;gap:2px;border-bottom:1px solid var(--line);box-shadow:0 20px 30px rgba(16,60,86,.08);display:none}
@@ -302,7 +322,8 @@ footer ul a:hover{color:#fff;text-decoration:underline}
   .wrap{width:calc(100% - 32px)}
   .nav-cta .btn{display:none}
   .hero{padding:32px 0 64px}
-  .hero .stores .store{flex:1 1 100%;justify-content:center}
+  .hero .stores .store,.hero .stores .btn{flex:1 1 100%;justify-content:center}
+  .drive-copy .stores>*{flex:1 1 100%;justify-content:center}
   .hero-visual{min-height:520px}
   .phone{width:250px}
   .float-card{padding:10px 12px;font-size:.78rem}
